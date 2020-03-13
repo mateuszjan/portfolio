@@ -87,11 +87,14 @@ hr {
     color: white;
     text-decoration: none;
     text-align: center;
+    padding: 10px 20px;
+    transition: all 0.4s;
 }
 
 .inner-links:hover {
-    background-color: #007bff;  
+    background-color: white;
     color: black;
+    border: white;
 }
 
 ul {
@@ -118,23 +121,81 @@ h2 {
     
 }
 
-.portfolio {
-    color:black;
-    text-decoration: none;
+.my-portfolio {
+    display: inline-block;
+    color: black;
+    border: 1px solid #007bff;
     text-transform: uppercase;
     padding: 10px 20px;
+    text-decoration: none;
+    transition: all 0.4s;
 
 }
 
-.portfolio:hover {
+.my-portfolio:hover {
     
-background-color: #007bff;  
-color:white;
-border: 1px solid black;
-display: inline-block;
+    background-color: #007bff;  
+    color:white;
+    border: 1px solid black;
+    display: inline-block;
 }
 
 p {
     left: auto;
     right: auto;
+    position: center;
+}
+
+/* portfolio */
+
+.portfolio {
+    background-color: gray;
+    text-align: center;
+
+}
+
+.portfolio-inner {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+figure {
+    margin: 0;
+    height: 200px;
+    flex-basis: 25%;
+    position: relative;
+}    
+
+
+figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}    
+
+
+figure figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+    background-color: rgba(0, 0, 255, 0.6);
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+figure:hover figcaption {
+    opacity: 1;
+}
+
+.portfolio h2 {
+    color: white;
 }
