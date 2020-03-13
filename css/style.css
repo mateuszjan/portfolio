@@ -199,3 +199,35 @@ figure:hover figcaption {
 .portfolio h2 {
     color: white;
 }
+
+
+
+/* kontakt */
+
+
+.contact {
+    text-align: center;
+}
+
+.contact form {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact form input:not([type="submit"]) {
+    flex-basis: 49%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.contact form textarea {
+    flex-basis: 100%;
+}
+
+.contact form input[type="submit"] {
+    margin: 10px auto;
+}
+
